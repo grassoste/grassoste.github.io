@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GP4 - Home</title>
+     
+<!-- CSS Details -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+ 
+<!--  Beginning of HTML -->
+
+    
+<body>
+<!--  Header -->
+<div class="header">
+        <p>
+    <b> GP</b><b><sup>4</sup></b><b> - Gram Positive Protein Prediction Pipeline</b>
+            <a href="https://www.rug.nl">    
+                <img src="img/rug_logo.jpg" alt="Logo_rug" style="float:left;height:50px"></a>
+            <a href="https://www.umcg.nl">
+                <img src="img/umcg_logo.jpg" alt="Logo_umcg" style="float:right;height:50px"></a>
+
+        </p>
+        
+    </div>
+
+<!--  Left bar -->
+<div class="sidenav">
+    <a href="index.html">Home-Input form</a>
+    <a href="retrieve.html">Retrieve results</a>
+    <a href="explanation.html">Explanation</a>
+    <a href="download.html">Download</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="cite.html">Cite me!</a>
+      </div>
+
+<!--  Main body -->
+<div class="main">
+
+<!--	
+	<h3 style="color:red;"> Update </h3>
+	<h4 style="color:red;"> This morning (5/11/20) a bug caused a lot of submitted jobs with only 1 protein to fail.<br/>The bug has now been fixed and jobs can be resubmitted. </h4>
+
+	<h3 style="color:red;"> Warning </h3>
+	<h4 style="color:red;"> Planned manteinance on the webserver between 16th October and 19th October. <br/> Please avoid submitting jobs within this timeframe as they will most likely fail. </h4>
+
+-->
+
+            <h1>Input Form</h1>
+            <h1><font style="font-size: 15pt" size="2">Paste your
+                protein sequence here in Fasta format:</font></h1>
+            <form name="submission" action="cgi-bin/prepare_job.py" method="POST"
+              enctype="multipart/form-data">
+              <p><textarea name="protseq" rows="6" cols="80" style="width: 75%; height: 1.08in"></textarea><br>
+                <strong><font face="helvetica, arial, sans-serif">Or:</font></strong>
+                <font face="helvetica, arial, sans-serif">Upload a
+                  protein fasta file:&nbsp;</font><input name="protfile"
+                  size="15" style="width: 1.34in; height: 0.26in;
+                  font-family: 'helvetica', 'arial', sans-serif"
+                  type="file"></p>
+<!--
+	      <p>Select output format:</p>
+              <p><input name="out" value="a" checked="checked" style="width: 0.14in;
+                  height: 0.14in" type="radio">A<br>
+                <input name="out" value="b" style="width: 0.14in;
+                  height: 0.14in" type="radio">B<br>
+                <input name="out" value="c" style="width: 0.14in;
+                  height: 0.14in" type="radio">C </p>
+              <p>Select input format:</p>
+              <p><input name="in" value="1" style="width: 0.14in;
+                  height: 0.14in" type="radio">1<br>
+                <input name="in" value="2" style="width: 0.14in;
+                  height: 0.14in" type="radio">2<br>
+                <input name="in" value="3" checked="checked"
+                  style="width: 0.14in; height: 0.14in" type="radio">3 </p>
+-->
+		<p><b>Optional</b> Insert your mail address to receive a notification mail:</p>
+              <p><input name="email" size="40" style="width: 3.4in;
+                  height: 0.26in" type="text"> </p>
+
+		  <p><input value="Submit" style="width: 0.88in; height: 0.44in" type="submit"/>
+                <input value="Reset" style="width: 0.77in; height: 0.44in" type="reset"/>&nbsp;</p>
+            </form>
+   
+      </div>
+<div class="bottom">
+
+    <p>Copyright<sup>&copy</sup> Stefano Grasso 2020</p>
+
+    <!-- Add icon library -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<!-- Add font awesome icons -->
+<a href="https://www.linkedin.com/in/stefano-grasso-biotech/" target="_blank" class="fab fa-linkedin"></a>
+<a href="https://www.researchgate.net/profile/Stefano_Grasso2" target="_blank" class="fab fa-researchgate"></a>
+    
+</div>    
+    
+  </body>
+</html>
